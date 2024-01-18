@@ -1,3 +1,37 @@
+@media screen and (max-width: 845px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  h1 {
+    text-align: center;
+  }
+
+  #gamecontainer {
+    display: flex;
+  }
+  .row {
+    justify-content: center;
+    width: 100%;
+    height: 55px;
+  }
+  .cells {
+
+          text-align: center;
+          height: 60px;
+          width: 45px;
+          border-radius: 25px;
+          flex: 1;
+          border: 1px solid rgb(249, 247, 247);
+          color: rgb(201, 7, 7);
+          font-size: 2rem;
+        
+  }
+}
+
 body {
   background-image: url(https://t3.ftcdn.net/jpg/03/02/04/06/240_F_302040655_IEH9RyDlu7LL8YCLjgL1IskhrpOlmlSv.jpg);
 }
@@ -8,32 +42,37 @@ h1 {
   font-size: 2rem;
 }
 
+#mainbox {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 80vh;
+  }
+
 #gamecontainer {
   flex-direction: column;
   display: flex;
-  height: 70vh;
+  height: 70%;
 
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+
 }
 
 .row {
-padding: 5px;
+  margin-top: 5px;
+  padding: 5px;
   justify-content: center;
   display: flex;
+  gap: 10px;
   flex: 1;
   color: rgb(221, 17, 17);
-  background-color: rgba(2, 2, 2, 0.84);
 }
 
 .cells {
   text-align: center;
-  height: 70px;
+  height: 60px;
   border-radius: 25px;
-  min-width: 40px;
-  max-width: 85px;
+  min-width: 45px;
+  max-width: 60px;
   flex: 1;
   border: 1px solid rgb(249, 247, 247);
   color: rgb(201, 7, 7);
@@ -53,47 +92,47 @@ padding: 5px;
   }
 }
 
-
 #butOne {
-     border-radius: 15px;
-     font-size: 1.5rem;
-     color:#5d7052;
-   }
-   #butOne:hover {
-     background-color: aliceblue;
-   }
-   
-   #butTwo {
-     border-radius: 15px;
-     font-size: 1.5rem;
-     color: #5d7052;
-   }
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #5d7052;
+}
+#butOne:hover {
+  background-color: aliceblue;
+}
 
-   .restart {
-     border-radius: 15px;
-     font-size: 1.5rem;
-     color: #5d7052;
-   }
-   #butTwo:hover {
-     background-color: aliceblue;
-   }
-   
-   button {
-     width: 20vw;
-     height: 20vw;
-     font-weight: bold;
-     font-size: 50px;
-     margin: 1vw;
-     float: left;
-     background-color: #e3cd8b;
-   }
+#butTwo {
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #5d7052;
+}
 
-   .butt {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
+.restart {
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: #5d7052;
+}
 
-   .hidden {
-     display: none;
-   }
+#butTwo:hover {
+  background-color: aliceblue;
+}
+
+button {
+  width: 20vw;
+  height: 20vw;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 1vw;
+  float: left;
+  background-color: #e3cd8b;
+}
+
+.butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
